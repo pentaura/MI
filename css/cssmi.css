@@ -1,0 +1,495 @@
+/*:root {
+  --ljubicasta: #9c5ce0;
+  --zuta: #f8e71c;
+  --zelena: #229058;
+  --crvena: #d0011b;
+  --black: #000000;
+  --white: #ffffff;*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    }
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+    #logo {
+        z-index: 1;
+        max-height: 100px;
+        max-width: 100px;
+    }
+	
+#wrapper {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    background-color: #fff;
+    }			
+
+/*Navigation CSS*/
+.page1 {
+background-image: url(img/naslovna.jpeg);
+    background-size: cover; /*image is bigger than viewport and too zoomed in so we need to set i to cover to see the whole image */
+    background-position: center;
+    height: 100vh; /*100% of the viewport*/
+        }
+
+.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+.header li {
+    float: right;
+}
+
+.header li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px; 15px 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 12px 10px 15px;
+    font-weight: 500;
+     
+}
+
+/* Change the link color to #111 (black) on hover */
+.header li a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px; 15px 10px 15px;
+    border-bottom: 4px solid #fff;
+    cursor: hand;
+    transition-duration: 0.5s;
+   }
+
+/*Button and photo in the center
+
+.front-box {
+    border-radius: 35px;
+    background-color: rgba(39, 32, 59, 0.5);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 600px;
+    height: 150px; 
+    position:absolute;
+    top:60%;
+    left:10%;
+    color: rgba(220, 195, 247, 0.78);
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+#button-donate a {
+    border-radius: 20px;
+    background-color: rgba(250, 48, 11, 0.54);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px; 
+    width: 180px;
+    height: 70px; 
+    position:absolute;
+    top:40%;
+    left:35%;
+    color: #ffffff;
+    font-size: 26px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+#button-donate a:hover {
+    background-color: #fa300b; 
+    color: white;
+    border: #fff 2px solid;
+    text-decoration: none;
+    text-align: center;
+    cursor: hand;
+}
+
+#div a:hover {
+    text-decoration: none;
+    cursor: hand;
+}
+
+#div a:active {
+    text-decoration: none;
+}
+
+*/
+
+/*  clanak i form  */
+
+.page2 {
+    margin: 40px 5px 20px 5px;
+    clear: both;
+    width: 95%;
+}
+
+.clanak-big {
+    width: 55%;
+    float: left;
+    margin: 30px 10px 30px 10px;
+    text-align: justify;
+}
+
+.clanak-big h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.border-clanak {
+    border-bottom: 3px solid #000;
+    margin: 7px 0 7px 0;
+}
+
+.border-clanak h4 a {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize; 
+}
+
+.superhik {
+    height: 270px;
+    width: 570px;
+    margin-bottom: 5px;
+}
+
+.form {
+    width: 30%;
+    float: right;
+    margin: 40px 10px 20px 10px;
+    background-color: #6f3ba5;
+    text-align: center;
+    color: #fff;
+  }
+
+.row {
+    padding: 5px;
+    margin:  10px;
+    background color: #000;
+    text-align: center;
+}
+
+.col span-2-of-3, 
+#name,
+#broj,
+#email
+{
+    margin-left: 90px;
+    background-color: #000;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+.posalji {
+    
+    border-radius: 20px;
+    background-color: #eae1df;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 2px; 
+    width: 110px;
+    margin-right: 90px; 
+    height: 60px; 
+    color: #121111;
+    font-size: 14 px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    
+}
+
+/*Columns*/
+
+.columns-3 {
+    float: right;
+    display: inline-block;
+    height: 350px;
+    margin-top: 25px;
+    clear: both;
+    }
+
+.columns-3 p {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+   
+}
+
+.column-1 {
+    width: 30%;
+    max-height: 350px;
+    overflow: hidden;
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+            
+}
+
+.img-box {
+    width: 300px;
+    height: 200px;
+}
+
+.box-border {
+    border-bottom: 3px solid #000;
+    margin: 7px 0 7px 0;
+    
+}
+
+.box-border h3 a {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: capitalize; 
+    color: #000;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.img-box.prvi {
+    background-image: url(img/oblak.jpg);
+    background-size: cover;
+}
+
+.img-box.drugi {
+    background-image: url(img/more.jpg);
+    background-size: cover;
+}
+
+.img-box.treci {
+    background-image: url(img/mjesec.jpg);
+    background-size: cover;
+}
+
+.img-box.cetvrti {
+    background-image: url(img/drvo.jpg);
+    background-size: cover;
+}
+
+.img-box.peti {
+    background-image: url(img/mjesec.jpg);
+    background-size: cover;
+}
+
+.img-box.sesti {
+    background-image: url(img/oblak.jpg);
+    background-size: cover;
+}
+    
+    
+
+/* banner */
+
+.banner {
+    display: inline-block;
+    width: 937px;
+    height: 200px;
+    background-color: #50e3c2;
+    width: 100%;
+    margin: 40px 0px 30px 0px;
+}
+
+.banner p {
+    margin: 100px 50px 100px 50px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    }
+
+/*Clearing the flow after floating the three columns*/
+
+.right-jotform {
+    clear: both;
+}
+    .kampanje {
+        display: inline-block;
+        height: 50px; 
+        width: 190px;
+        line-height: 30px;
+        background-color: #9c5ce0;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        margin: 50px 450px 20px 450px;
+}
+
+   
+a .kampanje {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}   
+
+a .kampanje a:hover {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}   
+
+.Ukljuci a {
+    text-decoration: none;
+    margin: 20px 520px 20px 520px;
+    color: #000;
+    }
+
+.Ukljuci a:hover {
+    text-decoration: none;
+    margin: 20px 520px 20px 520px;
+    color: #000;
+    cursor: pointer;
+    clear: both;
+    }
+
+/*Social media circles */
+
+.socialmedia {
+    margin: 25px 450px; 50px 270px;
+    border: none;
+    display: block;
+    
+        }
+
+.socialmedia .face i {
+    display: block;
+    float: left;
+    background-color: #9c5ce0;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 20px; /* or 50% width & line-height */
+}
+
+.socialmedia .twitter i {
+    display: block;
+    float: left;
+    background-color: #9c5ce0;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 20px; /* or 50% width & line-height */
+    
+}
+
+.socialmedia .face i:hover {
+    display: block;
+    float: left;
+    background-color: #9c5ce0;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #4039eb;
+    border-radius: 20px;
+    margin-right: 20px; /* or 50% width & line-height */
+}
+
+.socialmedia .twitter i:hover {
+   display: block;
+    float: left;
+    background-color: #9c5ce0;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #4039eb;
+    border-radius: 20px;
+    margin-right: 20px; /* or 50% width & line-height */
+    
+}
+
+
+/*  Footer  */
+
+
+#footer {
+    padding: 15px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    margin-right: 200px;
+    padding: 0;
+    overflow: hidden;
+    clear: left;
+    }
+
+.footer-nav ul li {
+    float: right;
+    
+}
+
+.footer-nav ul li a {
+    display: inline-block;
+    color: #3c3030;
+    text-align: center;
+    padding: 10px 12px;
+    border-bottom: 3px solid #fff;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 30px 15px 5px 15px;
+       
+}
+
+/* Change the link color to #111 (black) on hover */
+.footer-nav ul li a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: #3c3030;
+    font-weight: 700;
+    border-bottom: 3px solid #3c3030;
+    cursor: hand;
+    transition-duration: 0.5s;
+    padding: 10px 12px;
+   }
