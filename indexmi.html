@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
@@ -21,8 +22,8 @@
       
       .logo {
           z-index: 1;
-          height: 80%;
-          width: 80%;
+          height: 90%;
+          width: 90%;
       }
       
       .navbar-brand {
@@ -65,10 +66,35 @@
         background-size: contain;
               }
        
-        .well{
+        .jumbotron{
             background-color: aquamarine;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            
         }
         
+        h3 {
+        border-bottom: 3px solid black;
+        padding-bottom: 4px;
+        font-weight: 600;
+                }  
+        
+        .part-one {
+            margin: 40px;
+            padding: 5px;
+        }
+        
+        .formular {
+            background-color: #b72094;
+            padding: 20px;
+            color: #fff;
+            }
+        .formular p {
+            text-align: left;
+            padding: 10px;
+        }
+        
+                  
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
@@ -77,22 +103,23 @@
         
     #footer {
     padding: 15px;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     
 }
 
 .navbar-footer ul {
-    list-style-type: none;
+    list-style: none;
     /*margin-right: 200px;*/
     padding: 0;
     overflow: hidden;
     clear: left;
+    margin: 0 auto;
     }
 
 .navbar-footer ul li {
-    float: right;
+    float: left;
     
 }
 
@@ -100,13 +127,13 @@
     display: inline-block;
     color: #3c3030;
     text-align: center;
-    padding: 10px 12px;
+    padding: 10px 22px;
     border-bottom: 3px solid #fff;
     text-decoration: none;
     list-style-type: none;
-    text-transform: uppercase;
     font-weight: 700;
-   margin: 30px 15px 5px 15px;
+    font-size: 1.5em;
+   
        
 }
 
@@ -119,12 +146,17 @@
     border-bottom: 3px solid #3c3030;
     cursor: hand;
     transition-duration: 0.5s;
-    padding: 10px 12px;
+    padding: 10px 22px;
    }
+        
+.join {
+    margin-left: 45%;
+        }
         
 .join a {
     text-decoration: none;
     color: #000;
+    
     }
 
 .join a:hover {
@@ -133,6 +165,11 @@
     cursor: pointer;
     clear: both;
     }
+        
+.col-sm-4 p {
+    height: 8.5em;
+    overflow: hidden;
+           }
     
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
@@ -146,6 +183,88 @@
       display: none; 
     }
   }
+        
+.social {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social ul {
+    margin-left: 45%;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}   
+        
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+        
+.social .fa-facebook:hover { /* round facebook icon*/
+    background: #4060A5;
+}
+
+.social .fa-twitter:hover { /* round twitter icon*/
+    background: #00ABE3;
+}
+
+    .btn-lg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #9c5ce0;
+    width: 80%;
+                }
+
+    .btn-lg a {
+            color: #fff;
+        }      
+
+    .center-block {
+    float: none;
+    text-align: center;
+        }
+    
+    .ukljuci {
+        padding: 5px;
+        margin-bottom: 15px;
+       
+              }
+        
+        .ukljuci a {
+            color: #000;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        
   </style>
     
     
@@ -175,60 +294,117 @@
     </div>
   </div>
 </nav>
-
-
+    
+     
 <div class="container text-center">    
-  <h3>Cime se bavimo: </h3><br>
+  
+    <div class="part-one">
+         <div class="row">
+         <div class="col-sm-7 first">
+      <img src="css/img/download.jpg" class="img-responsive" alt="Image">
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+    </div>
+    
+    <div class="col-sm-3 col-sm-offset-2">
+        <div class="formular">
+        <h4>Ukljuci se!</h4>
+              <form>
+    <div class="form-group">
+      <label for="name"></label>
+      <input type="name" class="form-control" id="name" placeholder="Ime i prezime">
+    </div>
+        <div class="form-group">
+      <label for="email"></label>
+      <input type="email" class="form-control" id="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="post"></label>
+      <input type="free" class="form-control" id="number" placeholder="Postanski broj">
+    </div>
+    
+    <p>Sigurnost nam je bitna - sititi cemo tvoje osobne podatke. saznaj vise o nasoj politici privatnosti.</p>
+                  
+     <button type="submit" class="btn btn-default">Posalji</button>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
     
   <div class="row">
     <div class="col-sm-4">
       <img src="css/img/drvo.jpg" class="img-responsive"  alt="Image">
-      <p>Current Project</p>
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
     </div>
     <div class="col-sm-4"> 
       <img src="css/img/more.jpg" class="img-responsive" alt="Image">
-      <p>Project 2</p>    
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
     </div> 
       <div class="col-sm-4"> 
       <img src="css/img/mjesec.jpg" class="img-responsive" alt="Image">
-      <p>Project 2</p>    
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>   
     </div>
     </div>
     
      </div> 
   
 <br>
-    <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-      <div class="well blue">
-       <p>Some text..</p>
-      </div>
+    <div class="container">
+    <div class="jumbotron">
+       <p>ljudska prava, drustveno-ekonomska pravda i održivi razvoj</p>
       </div>
     </div>
     
  <div class="container text-center">
-      <div class="row">
+      <div class="row row-box">
     <div class="col-sm-4">
       <img src="css/img/drvo.jpg" class="img-responsive" alt="Image">
-      <p>Current Project</p>
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
     </div>
     <div class="col-sm-4"> 
       <img src="css/img/mjesec.jpg" class="img-responsive" alt="Image">
-      <p>Project 2</p>    
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>    
     </div> 
       <div class="col-sm-4"> 
       <img src="css/img/more.jpg" class="img-responsive" alt="Image">
-      <p>Project 2</p>    
+      <h3>Current Project</h3>
+        <p>This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. This is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. his is my space. Here are some of my interests: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>    
     </div>
     </div>
     </div>
     
-    <button class="btn-lg join">
-    <a href="#">Ukljuci se!</a>
+    
+    <div class="row">
+    <div class="col-md-3 col-kampanje center-block">
+    <button class="btn-lg">
+    <a href="#">Ostale kampanje</a>
     </button>
+    </div>
+    </div>
     
-    <nav class="nav-justified">
-    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-3 center-block ukljuci">
+    <a href="#">Ukljuci se!</a>
+    </div>
+    </div>
+    
+    <div class="social">
+    <ul>
+        <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+    </ul>
+    </div>
+    
+    <nav class="nav-justified hidden-xs col-md-offset-1">
+    <div class="container">
     <div class="navbar-footer"> 
     <div id="footer">
         <ul>
